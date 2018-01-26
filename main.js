@@ -128,7 +128,7 @@ Cat.prototype.update = function () {
         this.x = 230;
     } else {
         this.x -= this.game.clockTick * this.speed;
-        if (this.x < -100) this.x = 800; //800 = is where the cat starts on the right side 2nd time
+        if (this.x < -100) this.x = 800; // 800 = is where the cat starts on the right side 2nd time
     }
     Entity.prototype.update.call(this);
 }
