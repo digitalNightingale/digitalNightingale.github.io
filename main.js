@@ -1,4 +1,15 @@
-var AM = new AssetManager();
+/*
+ * Leah Ruisenor
+ * 
+ * TCSS 491
+ * Winter 2018
+ * HW 1 - Annimation
+ * 
+ */
+
+/*************
+ * Animation *
+ *************/
 
 function Animation(spriteSheet, frameWidth, frameHeight, sheetWidth, frameDuration, frames, loop, scale) {
     this.spriteSheet = spriteSheet;
@@ -25,11 +36,11 @@ Animation.prototype.drawFrame = function (tick, ctx, x, y) {
     yindex = Math.floor(frame / this.sheetWidth);
 
     ctx.drawImage(this.spriteSheet,
-                 xindex * this.frameWidth, yindex * this.frameHeight,  // source from sheet
-                 this.frameWidth, this.frameHeight,
-                 x, y,
-                 this.frameWidth * this.scale,
-                 this.frameHeight * this.scale);
+        xindex * this.frameWidth, yindex * this.frameHeight,
+        this.frameWidth, this.frameHeight,
+        x, y,
+        this.frameWidth * this.scale,
+        this.frameHeight * this.scale);
 }
 
 Animation.prototype.currentFrame = function () {
@@ -40,7 +51,10 @@ Animation.prototype.isDone = function () {
     return (this.elapsedTime >= this.totalTime);
 }
 
-// no inheritance
+/**************
+ * Background *
+ **************/
+
 function Background(game, spritesheet) {
     this.x = 0;
     this.y = 0;
@@ -56,81 +70,82 @@ Background.prototype.draw = function () {
 Background.prototype.update = function () {
 };
 
-// function MushroomDude(game, spritesheet) {
-//     this.animation = new Animation(spritesheet, 189, 230, 5, 0.10, 14, true, 1);
-//     this.x = 0;
-//     this.y = 0;
-//     this.speed = 100;
-//     this.game = game;
-//     this.ctx = game.ctx;
-// }
+/******************
+ * Princess Zelda *
+ ******************/
 
-// MushroomDude.prototype.draw = function () {
-//     this.animation.drawFrame(this.game.clockTick, this.ctx, this.x, this.y);
-// }
-
-// MushroomDude.prototype.update = function () {
-//     if (this.animation.elapsedTime < this.animation.totalTime * 8 / 14)
-//         this.x += this.game.clockTick * this.speed;
-//     if (this.x > 800) this.x = -230;
-// }
-
-
-// inheritance 
-function Cheetah(game, spritesheet) {
-
-    // 432 = h, 720 = w
-    // 5 = c, 5 = r
-    //432/5 = 86.4  720/5 = 144
-
-    // 1024 = height, 1024 = width of spritesheet
-    // 1024w / (2) num of colums = 512 
-    // 1024h / (4) num of rows = 256
-    // 2 = colums 
-    // frameDuration = 0.05
-    // 8 = frames
-    // loop = true
-    // scale = 0.5
-    //function Animation(spriteSheet, frameWidth, frameHeight, sheetWidth, frameDuration, frames, loop, scale)
-    //this.animation = new Animation(spritesheet, 512, 256, 2, 0.05, 8, true, 0.5);
-    
-    //this.animation = new Animation(spritesheet, 144, 70.4, 5, 0.5, 21, true, 2);
-    this.animation = new Animation(spritesheet, 144, 70.4, 5, 0.5, 21, true, 2);
+function Zelda(game, spritesheet) {
+    this.animation = new Animation(spritesheet, 144, 60.965, 5, .5, 21, true, 2);
     this.speed = 25; //350
     this.ctx = game.ctx;
-    Entity.call(this, game, 0, 250);
+    Entity.call(this, game, -60, 245);
 }
 
-Cheetah.prototype = new Entity();
-Cheetah.prototype.constructor = Cheetah;
+Zelda.prototype = new Entity();
+Zelda.prototype.constructor = Zelda;
 
-// Cheetah.prototype.update = function () {
-//     this.x += this.game.clockTick * this.speed;
-//     if (this.x > 800) this.x = -230;
-//     Entity.prototype.update.call(this);
-// }
-
-Cheetah.prototype.draw = function () {
+Zelda.prototype.draw = function () {
     this.animation.drawFrame(this.game.clockTick, this.ctx, this.x, this.y);
     Entity.prototype.draw.call(this);
 }
 
-Cheetah.prototype.update = function () {
-    if (this.animation.elapsedTime < this.animation.totalTime * 10 / 21)
+Zelda.prototype.update = function () {
+    if (this.animation.elapsedTime < this.animation.totalTime * 10 / 21) {
         this.x += this.game.clockTick * this.speed;
-    else if(this.animation.elapsedTime === this.animation.totalTime * 10 / 21){
-        this.x += this.game.clockTick * this.speed;
+    } else if (this.x > 800) {
+        this.x = -230;
     } else {
-        this.x += (this.game.clockTick * this.speed) * -1;
+        if (this.animation.elapsedTime < this.animation.totalTime * 11 / 21) {
+        } else {
+            this.x += (this.game.clockTick * this.speed) * -1;
+            if (this.animation.elapsedTime < this.animation.totalTime * 18 / 21) {
+            } else {
+                this.x -= (this.game.clockTick * this.speed) * -1;
+
+            }
+        }
     }
-    if (this.x > 800) this.x = -230;
-    //Entity.prototype.update.call(this);
 }
 
+/*******
+ * Cat *
+ *******/
 
+function Cat(game, spritesheet) {
+    this.animation = new Animation(spritesheet, 32, 32, 379, 0.5, 6, true, 1.5);
+    this.speed = 25;
+    this.ctx = game.ctx;
+    Entity.call(this, game, 800, 325);
+}
 
-AM.queueDownload("./img/mushroomdude.png");
-AM.queueDownload("./img/runningcat.png");
+Cat.prototype = new Entity();
+Cat.prototype.constructor = Cat;
+
+Cat.prototype.update = function () {
+    if (this.animation.elapsedTime > this.animation.totalTime * 4 / 6) {
+        // stop the first time
+    } else if (this.x < -800) {
+        this.x = 230;
+    } else {
+        this.x -= this.game.clockTick * this.speed;
+        if (this.x < -100) this.x = 800; //800 = is where the cat starts on the right side 2nd time
+    }
+    Entity.prototype.update.call(this);
+}
+
+Cat.prototype.draw = function (ctx) {
+    this.animation.drawFrame(this.game.clockTick, ctx, this.x, this.y);
+    Entity.prototype.draw.call(this);
+}
+
+/*************
+ * Main Code *
+ *************/
+
+var AM = new AssetManager();
+
+AM.queueDownload("./img/cat.png");
+AM.queueDownload("./img/zelda.png");
 AM.queueDownload("./img/background.jpg");
 
 AM.downloadAll(function () {
@@ -142,8 +157,8 @@ AM.downloadAll(function () {
     gameEngine.start();
 
     gameEngine.addEntity(new Background(gameEngine, AM.getAsset("./img/background.jpg")));
- //   gameEngine.addEntity(new MushroomDude(gameEngine, AM.getAsset("./img/mushroomdude.png")));
-    gameEngine.addEntity(new Cheetah(gameEngine, AM.getAsset("./img/runningcat.png")));
+    gameEngine.addEntity(new Cat(gameEngine, AM.getAsset("./img/cat.png")));
+    gameEngine.addEntity(new Zelda(gameEngine, AM.getAsset("./img/zelda.png")));
 
     console.log("All Done!");
 });
