@@ -122,7 +122,7 @@ Cat.prototype = new Entity();
 Cat.prototype.constructor = Cat;
 
 Cat.prototype.update = function () {
-    if (this.animation.elapsedTime > this.animation.totalTime * 4 / 6) {
+    if (this.animation.elapsedTime > this.animation.totalTime * 3 / 6) {
         // stop the first time
     } else if (this.x < -800) {
         this.x = 230;
