@@ -60,7 +60,7 @@ body, html {
             </a>
             <a href="#home" class="w3-bar-item w3-button">HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th-list"></i> UX PORTFOLIO</a>
+            <a href="#uxportfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th-list"></i> UX PORTFOLIO</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ART PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -147,6 +147,36 @@ body, html {
             </div>
         </div>
 
+
+
+        <!-- Container (Portfolio Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="uxportfolio">
+            <h3 class="w3-center">MY UX WORK</h3>
+            <p class="w3-center"><em>BLAH.<br> blah</em></p><br>
+
+
+<h2>Accordions</h2>
+<p>An accordion is used to show (and hide) HTML content:</p>
+
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-container w3-hide">
+  <h4>Section 1</h4>
+  <p>Some text..</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+
         <!-- Container (Portfolio Section) -->
         <div class="w3-content w3-container w3-padding-64" id="portfolio">
             <h3 class="w3-center">MY WORK</h3>
@@ -202,7 +232,7 @@ body, html {
                 <div class="w3-col m3">
                     <img src="/img/trio.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Not on The Same Page">
                 </div>
-                
+
                 <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
             </div>
         </div>
