@@ -6,5 +6,5 @@ under construction
 
 will be a place for my works
 
-my domain name: digitalnightingal.me
+my domain name: digitalnightingale.me
 
