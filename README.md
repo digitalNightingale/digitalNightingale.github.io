@@ -2,25 +2,9 @@
 
 under construction
 
-### Markdown
+### UX Portfolio
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+will be a place for my works
 
-```markdown
-Syntax highlighted code block
+my domain name: digitalnightingal.me
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-...
-
-### Blah
