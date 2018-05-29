@@ -21,7 +21,7 @@ function onKeypress1(element) {
 
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
+window.onscroll = function() { myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
