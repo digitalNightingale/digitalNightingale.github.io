@@ -1,147 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Under Construction</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link href="./style.css" type="text/css" rel="stylesheet">
+<head>
+    <title>Under Construction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="./style.css" type="text/css" rel="stylesheet">
 
 </head>
+
 <body>
 
     <!-- Navbar (sit on top) -->
     <div class="w3-bar w3-card w3-top w3-white" id="art">
         <div>
-                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" aria-label="Small Screen Navigation" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                        <i class="fa fa-bars"></i>
-                </a>
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" aria-label="Small Screen Navigation"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
 
             <a href="index.html" class="w3-bar-item w3-button"> HOME</a>
-            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="uxport.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th-list"></i> UX PORTFOLIO</a>
-            <a href="art.html" class="w3-bar-item w3-button w3-hide-small" style="background-color:#EFF1F1"><i class="fa fa-th"></i> ART PORTFOLIO</a>
-            <a href="cake.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-birthday-cake"></i> CAKE PORTFOLIO</a>
-            <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-user"></i> ABOUT</a>
+            <a href="uxport.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th-list"></i> UX PORTFOLIO</a>
+            <a href="art.html" class="w3-bar-item w3-button w3-hide-small" style="background-color:#EFF1F1">
+                <i class="fa fa-th"></i> ART PORTFOLIO</a>
+            <a href="cake.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-birthday-cake"></i> CAKE PORTFOLIO</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT</a>
 
         </div>
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-                <a href="uxport.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> UX PORTFOLIO</a>
-                <a href="art.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> ART PORTFOLIO</a>
-                <a href="cake.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> CAKE PORTFOLIO</a>
-                <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="uxport.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> UX PORTFOLIO</a>
+            <a href="art.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> ART PORTFOLIO</a>
+            <a href="cake.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> CAKE PORTFOLIO</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-           <span class="w3-xxlarge w3-text-white w3-wide">ART PORTFOLIO</span>
+            <span class="w3-xxlarge w3-text-white w3-wide">ART PORTFOLIO</span>
         </div>
     </div>
 
-     
-     
-     <!-- Container (Portfolio Section) -->
-     <div class="w3-content w3-container w3-padding-24" id="portfolio">
-            <h3 class="w3-center">MY ARTWORK</h3>
-            <p class="w3-center"><em>Some of my scketches.<br> Click on the images to make them bigger</em></p><br>
 
 
-            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-            <div class="w3-row-padding w3-center">
-                <div class="w3-col m3">
-                    <img src="/img/trioSketch.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Not on the Same Page Sketch" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-24" id="portfolio">
+        <h3 class="w3-center">MY ARTWORK</h3>
+        <p>lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="w3-padding-16"></div>
+        <h3 class="w3-center">Some of My Scketches</h3>
+        <p class="w3-center">
+            <em>Click on the images for details</em>
+        </p>
+        <br>
 
-                <div class="w3-col m3">
-                    <img src="/img/dogFood.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Please..." tabindex="0" onkeypress="onKeypress(this)">
-                </div>
 
-                <div class="w3-col m3">
-                    <img src="/img/heartsFire.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hearts on Fire" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/hands.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lines" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="/img/trioSketch.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Not on the Same Page Sketch</em><br>From the Head Heart Series<br>Pencil on Sketchbook Paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
             </div>
 
-            <div class="w3-row-padding w3-center w3-section">
-
-                <div class="w3-col m3">
-                    <img src="/img/objTrio.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Grow a Backbone" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/rock.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="head_heart" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/trio.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Not on The Same Page" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/dogsleep.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sleeps" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
+            <div class="w3-col m3">
+                <img src="/img/dogFood.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Please...</em><br>Pencil on Sketchbook Paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
             </div>
 
-            <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="/img/heartsFire.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Hearts on Fire</em><br>From the head_heat series<br>Charcoal, Pastel, Collage on Paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
+            </div>
 
-                <div class="w3-col m3">
-                    <img src="/img/hands2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hands" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/drawTools.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tools" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/drafting.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Drafting Dreams" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/img/chair1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chair" tabindex="0" onkeypress="onKeypress(this)">
-                </div>
-
+            <div class="w3-col m3">
+                <img src="/img/hands.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Lines</em><br>Pencil on Sketchbook Paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
             </div>
         </div>
 
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'" onkeypress="this.style.display='none'">
-                <span class="w3-button w3-large w3-black w3-display-topright" title="Close Image"><i class="fa fa-remove"></i></span>
-                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                    <img id="img01" class="w3-image" alt="fullsize"  onkeypress1="this.style.display='none'">  <!--******* FIX THIS ALT *********-->
-                    <p id="caption" class="w3-opacity w3-large"></p>
-                </div>
+        <div class="w3-row-padding w3-center w3-section">
+
+            <div class="w3-col m3">
+                <img src="/img/objTrio.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Grow a Backbone</em><br>From the Head Heart Series<br>Scrap paper on Cardboard<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
             </div>
 
-
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-            <a href="#art" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <div class="w3-xlarge w3-section">
-                <a href="https://www.facebook.com/lilcakesbyleah/" style='text-decoration:none;' title="LiL Cakes by Leah" aria-label="facebook" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
-                <a href="https://www.instagram.com/leahbugcie/" style='text-decoration:none;' aria-label="instagram" title="leahR" target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
-                <a href="https://github.com/digitalNightingale" style='text-decoration:none;' aria-label="github" title="digitalNightingale" target="_blank" class="fa fa-github w3-hover-opacity"></a>
-                <a href="https://www.linkedin.com/in/leah-ruisenor/" style='text-decoration:none;' aria-label="linkedin" title="Leah Ruisenor" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+            <div class="w3-col m3">
+                <img src="/img/rock.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>head_heart</em><br>From the Head Heart Series<br>Rock Still Life<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
             </div>
 
-            <div class="w3-center">
-                <img src="/img/lmr.PNG" style="width:10%" alt="inital triforce avatar">
+            <div class="w3-col m3">
+                <img src="/img/trio.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Not on The Same Page</em><br>From the Head Heart Series<br>String, Cardboard, charcoal, pastel on paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
             </div>
-            <!--  <p>Developed by <a href="https://github.com/digitalNightingale" style='text-decoration:none;' title="GitHub" target="_blank" class="w3-hover-text-green">digitalNightingale</a></p>  -->
-        </footer>
 
-        <!-- Scripts to run -->
-        <script type="text/javascript" src="./myscript.js"></script>
+            <div class="w3-col m3">
+                <img src="/img/dogsleep.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Sleeps</em><br>Pencil on sketchbook paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
+            </div>
+
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+
+            <div class="w3-col m3">
+                <img src="/img/hands2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Hands</em><br>Pencil on sketchbook paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/img/drawTools.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Tools</em><br>Pencil on sketchbook paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/img/drafting.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Drafting Dreams</em><br>Pencil on sketchbook paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/img/chair1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<em>Chair</em><br>Charcoal, paint  on sketchbook paper<br>Size:"
+                    tabindex="0" onkeypress="onKeypress(this)">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'" onkeypress="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Image">
+            <i class="fa fa-remove"></i>
+        </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image" alt="fullsize" onkeypress1="this.style.display='none'">
+            <!--******* FIX THIS ALT *********-->
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="w3-padding-16"></div>
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#art" class="w3-button w3-light-grey">
+            <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/lilcakesbyleah/" style='text-decoration:none;' title="LiL Cakes by Leah" aria-label="facebook"
+                target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+            <a href="https://www.instagram.com/leahbugcie/" style='text-decoration:none;' aria-label="instagram" title="leahR" target="_blank"
+                class="fa fa-instagram w3-hover-opacity"></a>
+            <a href="https://github.com/digitalNightingale" style='text-decoration:none;' aria-label="github" title="digitalNightingale"
+                target="_blank" class="fa fa-github w3-hover-opacity"></a>
+            <a href="https://www.linkedin.com/in/leah-ruisenor/" style='text-decoration:none;' aria-label="linkedin" title="Leah Ruisenor"
+                target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+        </div>
+
+        <div class="w3-center">
+            <img src="/img/lmr.PNG" style="width:10%" alt="inital triforce avatar">
+        </div>
+        <!--  <p>Developed by <a href="https://github.com/digitalNightingale" style='text-decoration:none;' title="GitHub" target="_blank" class="w3-hover-text-green">digitalNightingale</a></p>  -->
+    </footer>
+
+    <!-- Scripts to run -->
+    <script type="text/javascript" src="./myscript.js"></script>
 
 </body>
+
 </html>
