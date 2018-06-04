@@ -16,7 +16,6 @@ function onKeypress(element) {
 function onKeypress1(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "none";
-
 }
 
 // Change style of navbar on scroll
