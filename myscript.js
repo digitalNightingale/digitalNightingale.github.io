@@ -22,17 +22,18 @@ function onKeypress1(element) {
 // Change style of navbar on scroll
 window.onscroll = function () {
     myFunction()
-    blah();
+    fade();
 };
 
-function blah(){
+function fade() {
     var a = document.getElementById("arrows");
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        a.className = "opacity", 1 - $(window).scrollTop() / 250;
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        a.className = "fade", 1 - $(window).scrollTop() / 250;
     } else {
-        a.className = a.className.replace("opacity", 1 + $(window).scrollTop() / 250, "");
+        a.className = " arrow " + "bounce";
     }
-  };
+}
+
 
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -53,7 +54,7 @@ function toggleFunction() {
     }
 }
 
-
+// Used to toggle buttons
 function myNewFunction(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
