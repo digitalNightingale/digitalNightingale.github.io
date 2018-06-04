@@ -44,6 +44,11 @@ function toggleFunction() {
     }
 }
 
+$(window).scroll(function(){
+    $(".arrow").css("opacity", 1 - $(window).scrollTop()); 
+  //250 is fade pixels
+  });
+
 function myNewFunction(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
