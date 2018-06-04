@@ -97,7 +97,7 @@ html {
     left: 50%;
     margin-left: -20px;
     width: 40px;
-    height: 60px;
+    height: 50px;
 }
 
 .bounce {
@@ -129,21 +129,21 @@ html {
 
 .bgimg-2 {
     background-image: url("/img/bg2.png");
-    min-height: 80%;
+    min-height: 82.5%;
 }
 
 /* Third image (butterfly) */
 
 .bgimg-3 {
     background-image: url("/img/b.jpg");
-    min-height: 80%;
+    min-height: 82.5%;
 }
 
 /* Pour image (cake) */
 
 .bgimg-4 {
     background-image: url("/img/pour1.JPG");
-    min-height: 80%;
+    min-height: 82.5%;
 }
 
 .w3-wide {
