@@ -19,11 +19,20 @@ function onKeypress1(element) {
 
 }
 
-
 // Change style of navbar on scroll
 window.onscroll = function () {
     myFunction()
+    blah();
 };
+
+function blah(){
+    var a = document.getElementById("arrows");
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        a.className = "opacity", 1 - $(window).scrollTop() / 250;
+    } else {
+        a.className = a.className.replace("opacity", 1 + $(window).scrollTop() / 250, "");
+    }
+  };
 
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -44,10 +53,6 @@ function toggleFunction() {
     }
 }
 
-$(window).scroll(function(){
-    $(".arrow").css("opacity", 1 - $(window).scrollTop()); 
-  //250 is fade pixels
-  });
 
 function myNewFunction(id) {
     var x = document.getElementById(id);
