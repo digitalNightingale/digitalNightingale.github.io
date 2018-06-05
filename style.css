@@ -8,6 +8,45 @@ h6 {
     font-family: "Lato", sans-serif;
 }
 
+div.parent {
+    position: relative;
+}
+
+div.absolute {
+    position: absolute;
+    left: 85px;
+    bottom: 12px;
+}
+
+.bottomleftTriforce {
+    position: absolute;
+    bottom: 1px;
+}
+
+.bottomrightMedia {
+    position: absolute;
+    bottom: 13px;
+    right: 24px;
+}
+
+
+#footer {
+    height: 120px;
+    text-align: center;
+    margin: auto;
+}
+
+.div1 {
+    border:3px solid red;
+}
+
+.copyright {
+    color: #e7b923;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+}
+
 body,
 html {
     height: 100%;
@@ -41,7 +80,6 @@ html {
         transform: translateY(-15px);
     }
 }
-
 
 @-webkit-keyframes bounce {
     0%,
@@ -106,7 +144,6 @@ html {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
-
 
 /* Create a Parallax Effect */
 
