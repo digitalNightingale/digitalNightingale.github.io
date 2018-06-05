@@ -15,7 +15,8 @@ html {
     line-height: 1.8;
     font-size: 1em;
 }
-p{
+
+.txt-aj {
     text-align: justify;
 }
 
