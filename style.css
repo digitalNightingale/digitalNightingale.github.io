@@ -8,46 +8,6 @@ h6 {
     font-family: "Lato", sans-serif;
 }
 
-/* Footer containers */
-
-div.parent {
-    position: relative;
-}
-
-div.absolute {
-    position: absolute;
-    left: 85px;
-    bottom: 12px;
-}
-
-.bottomleftTriforce {
-    position: absolute;
-    bottom: 1px;
-}
-
-.bottomrightMedia {
-    position: absolute;
-    bottom: 13px;
-    right: 24px;
-}
-
-#footer {
-    height: 94px;
-    text-align: center;
-    margin: auto;
-}
-
-.div1 {
-    border: 3px solid red;
-}
-
-.copyright {
-    color: #e7b923;
-    text-align: left;
-    font-weight: 300;
-    font-size: 14px;
-}
-
 body,
 html {
     height: 100%;
@@ -55,10 +15,6 @@ html {
     line-height: 1.8;
     font-size: 1em;
     text-align: justify;
-}
-
-.lgFa {
-    font-size: 35px;
 }
 
 /* Create bouncing arrows */
@@ -146,6 +102,50 @@ html {
     animation: bounce 2s infinite;
 }
 
+/* Footer containers */
+
+div.parent {
+    position: relative;
+}
+
+div.absolute {
+    position: absolute;
+    left: 85px;
+    bottom: 12px;
+}
+
+.bottomleftTriforce {
+    position: absolute;
+    bottom: 1px;
+}
+
+.bottomrightMedia {
+    position: absolute;
+    bottom: 13px;
+    right: 24px;
+}
+
+#footer {
+    height: 94px;
+    text-align: center;
+    margin: auto;
+}
+
+.div1 {
+    border: 3px solid red;
+}
+
+.copyright {
+    color: #e7b923;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.lgFa {
+    font-size: 35px;
+}
+
 /* Create a Parallax Effect */
 
 .bgimg-1,
@@ -199,7 +199,7 @@ html {
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3
+    .bgimg-3,
     .bgimg-4 {
         background-attachment: scroll;
     }
