@@ -8,6 +8,8 @@ h6 {
     font-family: "Lato", sans-serif;
 }
 
+/* Footer containers */
+
 div.parent {
     position: relative;
 }
@@ -197,7 +199,8 @@ html {
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3 {
+    .bgimg-3
+    .bgimg-4 {
         background-attachment: scroll;
     }
 }
