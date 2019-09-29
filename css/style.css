@@ -151,7 +151,9 @@ div.absolute {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
-.bgimg-4 {
+.bgimg-4,
+.bgimg-him,
+.bgimg-her {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,6 +164,16 @@ div.absolute {
 
 .bgimg-1 {
     background-image: url('/img/home-hero.jpg');
+    min-height: 100%;
+}
+
+.bgimg-him {
+    background-image: url('/img/him.jpg');
+    min-height: 100%;
+}
+
+.bgimg-her {
+    background-image: url('/img/her.jpg');
     min-height: 100%;
 }
 
@@ -200,6 +212,37 @@ div.absolute {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
+}
+
+.my-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 90px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.my-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.my-button:hover {
+    color: #112C2F!important;
+}
+
+.my-wide {
+    letter-spacing: 6px
 }
 
 /* Turn off parallax scrolling for tablets and phones */
