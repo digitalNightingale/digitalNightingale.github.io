@@ -161,7 +161,7 @@ div.absolute {
 /* First image (Logo. Full height) */
 
 .bgimg-1 {
-    background-image: url('/img/home-hero.JPG');
+    background-image: url('/img/home-hero.jpg');
     min-height: 100%;
 }
 
