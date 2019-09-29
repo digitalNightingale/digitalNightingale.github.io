@@ -245,6 +245,10 @@ div.absolute {
     letter-spacing: 6px
 }
 
+.my-none {
+    text-decoration: none;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 
 @media only screen and (max-device-width: 1024px) {
