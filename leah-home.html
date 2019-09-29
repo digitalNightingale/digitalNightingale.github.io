@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio of Leah M Ruisenor</title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#522ac7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/test.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" aria-label="Small Screen Navigation"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <a href="index.html#home" class="w3-bar-item w3-button" style="background-color: #EFF1F1"> HOME</a>
+            <a href="uxport.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th-list"></i> UX PORTFOLIO</a>
+            <a href="art.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th"></i> ART PORTFOLIO</a>
+            <a href="cake.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-birthday-cake"></i> CAKE PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="uxport.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> UX PORTFOLIO</a>
+            <a href="art.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> ART PORTFOLIO</a>
+            <a href="cake.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> CAKE PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="hero-text" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">SOUL OF AN ARTIST,
+                <span class="w3-hide-small">HEART OF A TECHIE...</span>
+            </span>
+        </div>
+
+        <div class="arrow bounce" id="arrows">
+            <i class="fa fa-angle-double-down fa-3x w3-animate-opacity" id="daArrow" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-32" id="about">
+        <h3 class="w3-center">ABOUT LEAH</h3>
+        <p>Leah Ruisenor has a Bachelor's in Computer Science from the University of Washington Tacoma in the summer of 2019. 
+            But her journey to this place started long ago. After graduating from high school in 1999 she began pursuing a 
+            degree in Psychology from Louisiana
+            Tech University, but after spending two years in the study she realized that her true interest in the subject
+            was how humans processed information, moreover it was processing that had captivated her. Intrigued by how the
+            interpretation of various stimuli could generate different actions in different people, caused her to change
+            educational focuses and fueled her passion for user interface design. While in-between studies she held a position
+            as a designated window display designer for the Gap; while unconventional it allowed her to practice the craft
+            of designing and targeting for audience interactions. Putting to work a few of the methodologies learned from
+            her studies, she was able to design window displays that attracted the attention of and drew in new customers
+            through brilliantly designed stimuli.
+            <br>
+            <br>Being part of a military family made staying in one place difficult and over her travels from state to state
+            she honed her design skills to create delectable treats for children, eventually forming a small business creating
+            one off smash cakes. Driven by her love for design, she would pick customers brains, drawing detailed sketches
+            and plans that ultimately led to small masterpieces. While she has always been artistic, it is her passion in
+            the service of pleasing customers that truly comes out in her works. Eventually she found herself in Washington
+            State and with the closing of her family’s military commitment she made this her home and returned to her education,
+            with a focus on her passion of designing for human interaction. Presently she is working at SiteCrafting as a Web 
+            Application Developer. Leah has the soul of an artist and the heart of a techie; designing front-end programs that are fun
+            and exciting for the end user allows her to combine both worlds.</p>
+
+        <br>
+        <hr />
+        <br>
+        <h5 class="w3-large w3-center">On a scale of 1 to 10</h5>
+        <p class="w3-center">She's pretty good at</p>
+
+        <p class="w3-wide">
+            <i class="fa fa-laptop" aria-hidden="true"></i>UX</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">8</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-code" aria-hidden="true"></i>CODE</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">7.5</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>DESIGN</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">8.5</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-birthday-cake" aria-hidden="true"></i>CAKE</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">9</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-rocket" aria-hidden="true"></i>INITIATIVE</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">10</div>
+        </div>
+        <p class="w3-center">
+            <br>
+            <br>
+            <em>So much to learn, so little time...</em>
+        </p>
+    </div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">11+</span>
+            <br> Partners
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span>
+            <br> Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span>
+            <br> Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span>
+            <br> Meetings
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container" id="contact" style="padding-top:64px;">
+        <h3 class="w3-center">Questions? Comments?</h3>
+        <p class="w3-center">
+            <em>I'd love your feedback!</em>
+        </p>
+
+        <div class="w3-row  w3-section" style="padding-top:20px;">
+            <div class="w3-col m4 w3-container">
+                <div class="w3-left-align">
+                    <img src="/img/leahR.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me by the water" style="width:100%; padding-top: 10px">
+                </div>
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-user fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Leah Ruisenor</a>
+                    <br>
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tacoma, Wa
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: leah.ruisenor@gmail.com
+                    <br>
+                </div>
+                <p>Leave me a note:</p>
+                <form action="mailto:lmr81@uw.com" method="post" enctype="text/plain">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" aria-label="Name" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" aria-label="Email" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" aria-label="Message" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-dark-grey w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="padding-bottom: 60px; padding-right: 60px">
+        <a href="#home" class="w3-button w3-light-grey w3-right" aria-label="to top of page">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!--Footer-->
+    <footer class="w3-black w3-opacity">
+        <div class="parent" id="footer">
+            <h3 class="copyright">
+                <img src="/img/lmr.PNG" class="bottomleftTriforce" style="width: 113px;" alt="inital triforce avatar">
+                <div class="absolute">
+                    <i class="fa fa-copyright w3-hide-small" aria-hidden="true" style="padding-left: 10px"></i> 2018 Developed by
+                    <a href="https://github.com/digitalNightingale" style='text-decoration:none;' title="GitHub" target="_blank" class="w3-hover-text-white w3-hide-small">digitalNightingale</a>
+                </div>
+                <span class="bottomrightMedia">
+                    <a href="https://www.linkedin.com/in/leah-ruisenor/" style='text-decoration:none; padding-right: 10px;' aria-label="linkedin"
+                        title="Leah Ruisenor" target="_blank" class="fa fa-linkedin w3-hover-text-white lgFa"></a>
+                    <a href="https://github.com/digitalNightingale" style='text-decoration:none; padding-right: 10px;' aria-label="github" title="digitalNightingale"
+                        target="_blank" class="fa fa-github w3-hover-text-white lgFa"></a>
+                    <a href="https://www.facebook.com/lilcakesbyleah/" style='text-decoration:none;' title="LiL Cakes by Leah" aria-label="facebook"
+                        target="_blank" class="fa fa-facebook-official w3-hover-text-white lgFa"></a>
+                </span>
+            </h3>
+        </div>
+    </footer>
+
+    <!-- Scripts to run -->
+    <script type="text/javascript" src="js/myscript.js"></script>
+
+</body>
+
+</html>
