@@ -264,6 +264,9 @@ div.absolute {
     .bgimg-her {
         background-attachment: scroll;
     }
+    .my-button{
+        padding: 0px !important;
+    }
 }
 
 /* latin-ext */
