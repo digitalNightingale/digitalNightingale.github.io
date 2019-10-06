@@ -264,8 +264,16 @@ div.absolute {
     .bgimg-her {
         background-attachment: scroll;
     }
-    .my-button{
+    .my-button {
         padding: 0px !important;
+    }
+    .title_mobile {
+        padding: 0px !important;
+        letter-spacing: 2px !important;
+        font-size: 16px !important;
+    }
+    .title_flex {
+        display: block;
     }
 }
 
